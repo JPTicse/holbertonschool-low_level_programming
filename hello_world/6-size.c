@@ -18,7 +18,7 @@ int main(void)
 	printf("Size of an int: %lu byte(s)\n", sizeof(sinteger));
 	printf("Size of a long int: %lu byte(s)\n", sizeof(slong));
 	printf("Size of a long long int: %lu byte(s)\n", sizeof(slonglong));
-	printf("Size of a float: %lu byte(s)", sizeof(sfloat));
+	printf("Size of a float: %lu byte(s)\n", sizeof(sfloat));
 	
 	return (0);
 }
