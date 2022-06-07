@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char schar;
+	char scharacter;
 	int sinteger;
 	long slong;
 	long long slonglong;
