@@ -19,7 +19,7 @@ int main(void)
 	while (l <= 'f')
 	{
 		putchar(l);
-		a_to_f++;
+		l++;
 	}
 
 	putchar('\n');
