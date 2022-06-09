@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (a2 = '0'; a2 <= '9'; a2++)
 		{
-		 	for (b1 = a1; b1 <= '9'; b1++) /*print second of pair*/
+			for (b1 = a1; b1 <= '9'; b1++) /*print second of pair*/
 			{
 				for (b2 = a2 + 1; b2 <= '9'; b2++)
 				{
@@ -26,14 +26,13 @@ int main(void)
 					putchar(b1);
 					putchar(b2);
 
-					if (!((a1 == '9' && a2 == '8') &&
-					      (b1 == '9' && b2 == '9')))
+					if (a1 != '9' || b1 != '8' || a2 != '9' || b2 != '9')
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				b2 = '0';
+				b1 = '0';
 			}
 		}
 	}
