@@ -3,7 +3,6 @@
 /**
  * print_last_digit - The last number of a digit
  * Description : give the last digit whether its positive or negative
- *@ld: Last digit
  *@n:The value will take from
  * Return:The last number
  */
