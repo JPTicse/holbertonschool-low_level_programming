@@ -19,5 +19,5 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 	}
-return(0);
+return (0);
 }
