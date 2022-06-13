@@ -14,10 +14,18 @@ int main(void)
 
 	for (i = 0; i < 98; i++)
 	{
+		if (i = 97)
+		{
+		sum = fib + fib2;
+		printf"%lu", sum);
+		}
+		else
+		{
 		sum = fib1 + fib2;
 		printf("%lu, ", sum);
 		fib1 = fib2;
 		fib2 = sum;
+		}
 	}
 return (0);
 }
