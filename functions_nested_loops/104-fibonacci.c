@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 	int i = 0;
 
 	for (i = 0; i < 98; i++)
