@@ -16,8 +16,8 @@ int main(void)
 	{
 		if (i = 97)
 		{
-		sum = fib + fib2;
-		printf"%lu", sum);
+		sum = fib1 + fib2;
+		printf("%lu", sum);
 		}
 		else
 		{
