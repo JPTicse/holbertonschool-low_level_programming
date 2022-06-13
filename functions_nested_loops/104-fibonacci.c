@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < 98; i++)
 	{
-		if (i = 97)
+		if (i == 97)
 		{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
