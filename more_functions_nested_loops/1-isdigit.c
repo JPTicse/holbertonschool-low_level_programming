@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _intdigit - code
+ * _isdigit - code
  * Description : Evaluate if its a digit
  *@c:The charaacter
  * Return:1 if its digit, else 0
  */
 
-int _intdigit (int c)
+int _isdigit (int c)
 {
 	if (c >= '0' &&  c <= '9')
 	{
