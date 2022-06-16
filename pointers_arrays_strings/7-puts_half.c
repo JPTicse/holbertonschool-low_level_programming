@@ -14,7 +14,7 @@ int len = 0;
 	}
 	if (len % 2 != 0)
 	{
-	len = (len - 1) / 2;
+	len = (len - 1);
 	}
 	for (i = len / 2; i < len; i++)
 	{
