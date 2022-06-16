@@ -21,7 +21,7 @@ int len = 0;
 	}
 	else
 	{
-		for (i = (len / 2) - 1; i < len; i++)
+		for (i = (len / 2) + 1; i < len; i++)
 		{
 			_putchar(str[i]);
 		}
