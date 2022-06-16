@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code 
- *
+ * reset_to_98 - chage pointer to 98
+ * @n: Pointer
  * Return: Always 0.
  */
 
