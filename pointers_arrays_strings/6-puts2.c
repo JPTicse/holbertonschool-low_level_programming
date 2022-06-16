@@ -6,7 +6,7 @@
  */
 void puts2(char *str)
 {
-/* A loop to reverse the [] value with a temp variable */
+/*A loop and conditional to print the even index of array */
 int i = 0;
 int len = 0;
 	for (len = 0; str[len] != '\0'; len++)
