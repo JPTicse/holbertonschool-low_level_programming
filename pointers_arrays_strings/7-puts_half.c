@@ -12,13 +12,19 @@ int len = 0;
 	for (len = 0; str[len] != '\0'; len++)
 	{
 	}
-	if (len % 2 != 0)
+	if (len % 2 == 0)
 	{
-	len = (len - 1);
+		for (i = len / 2; i < len; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
-	for (i = len / 2; i < len; i++)
+	else
 	{
-		_putchar(str[i]);
+		for (i = (len / 2) - 1; i < len; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
