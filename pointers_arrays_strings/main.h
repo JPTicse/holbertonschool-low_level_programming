@@ -25,3 +25,4 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 int _atoi(char *s);
 char *rot13(char *);
+void print_number(int n);
