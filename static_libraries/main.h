@@ -1,5 +1,6 @@
-#ifndef HEADER
-#define HEADER
+#ifndef STATIC_LIBRARIES
+#define STATIC_LIBRARIES
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
