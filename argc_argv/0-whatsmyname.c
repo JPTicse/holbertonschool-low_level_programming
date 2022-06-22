@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -  writes name
- * @argc: counter 
+ * @argc: counter
  * @argv: value
  * Return: 0
  **/
