@@ -1,28 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - Entry Point
+ * main - add 2 numbers and +
  * @argc: count
- * @argv: value f arguments
- * Return: 0 if no args, 1 if it is not an integer
+ * @argv: value
+ * Description: Print the sum of numbers, if not a number error
+ * Return: 1 if error, 0 if function runs properly.
  */
+
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum, i;
+	char *p;
+	int num;
 
-	if (argc < 1)
-		return (0);
-
-	for (i = 1; i < argc; i++)
+	sum = 0;
+	if (argc > 1)
 	{
-		if (!atoi(argv[i]))
+		for (i = 1; argv[i]; i++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			num = strtol(argv[i], &p, 10);
+			if (!*p)
+				sum += num;
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
-
 	return (0);
 }
