@@ -1,32 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+
 /**
- * _strdup - check the code for Holberton School students.
- * @str: argument for array
- * Return: Always 0.
+ * _strdup - function to return ptr containing cpy of string
+ * @str: string to be copied
+ *
+ * Return: Null for failure else return ptr.
  */
 char *_strdup(char *str)
 {
-	char *my_array;
-	int i, len;
+	char *s;
+	int a, b;
 
-	my_array = malloc(sizeof(str));
-
-	i = len = 0;
-	while (str[i] != '\0')
-	{
-		len++;
-		i++;
-	}
-
-	if (my_array == NULL)
+	if (str == 0)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-	{
-		my_array[i] = str[i];
-		i++;
-	}
-
-	return (my_array);
+	for (a = 0; str[a] != '\0'; a++)
+		;
+	a++;
+	s = malloc(a * sizeof(*s));
+	if (s == 0)
+		return (NULL);
+	for (b = 0; b < a; b++)
+		s[b] = str[b];
+	return (s);
 }
