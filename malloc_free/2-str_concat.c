@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 	char *my_array;
 
 	c = 0;
-	my_array = malloc(sizeof(*s1 + *s2));
+	my_array = malloc(sizeof(*s1 + *s2) + 8);
 
 	if (my_array == NULL)
 		return (NULL);
