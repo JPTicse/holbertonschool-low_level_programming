@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * *_calloc - blocks of mem malloc
- * @nmemb: numero of members
- * @size: sizze
- * Return: arr
+ * *array_range - create an array int range
+ * @min: min number
+ * @max: max number
+ * Return: arri
  */
 int *array_range(int min, int max)
 {
