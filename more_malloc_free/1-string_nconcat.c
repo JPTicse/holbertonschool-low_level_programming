@@ -3,15 +3,17 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - malloa and If it fails exit with 98 value
- * @b: an integer unsigned
- * Return: Pointer.
+ * *string_nconcat - malloa and If it fails exit with 98 value
+ * @s1: 1st string
+ * @s2: 2nd string
+ * @n: N numbers of the second string
+ * Return: s3.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, lens1 = 0;
+	unsigned int len, i, j, lens1 = 0;
 	char *s3;
-	
+
 	if (!s1)
 		s1 = "";
 	if (!s2)
@@ -19,7 +21,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (s1[lens1] != '\0')
 		lens1++;
-	s3 = malloc(sizeof(char) * (lens1 + n + 1));
+	len = lens1 + n + 1;
+	s3 = malloc(sizeof(*s3) * len);
 	for (i = 0; i < lens1; i++)
 		s3[i] = s1[i];
 	lens1++;
