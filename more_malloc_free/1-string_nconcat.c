@@ -11,7 +11,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, lens1 = 0;
+	unsigned int i, j, lens1;
 	int len = 0;
 	char *s3;
 
@@ -19,11 +19,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-
+	lens1 = 0;
 	while (s1[lens1] != '\0')
 		lens1++;
 	len = lens1 + n + 1;
-	s3 = malloc(sizeof(*s3) * len);
+	s3 = malloc((sizeof(*s3) * len) + 5);
 	for (i = 0; i < lens1; i++)
 		s3[i] = s1[i];
 	lens1++;
